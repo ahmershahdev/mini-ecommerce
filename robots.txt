@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /mini_ecommerce_project/backend/
-Disallow: /mini_ecommerce_project/admin/backend/
-Sitemap: http://localhost/mini_ecommerce_project/sitemap.xml
-
