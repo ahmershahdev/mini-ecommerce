@@ -1,8 +1,8 @@
 <?php
 require_once 'config/db.php';
 
-$pageTitle = 'Commerza | Premium Shopping';
-$metaDescription = 'Buy Product A to Product E from Commerza mini ecommerce storefront.';
+$pageTitle = 'Mini E-Commerce | Premium Shopping';
+$metaDescription = 'Buy Product A to Product E from mini ecommerce storefront.';
 $metaKeywords = 'product a, product b, product c, product d, product e, online store';
 
 $products = array();
@@ -34,7 +34,7 @@ foreach ($products as $p) {
 $extraHead = '<script type="application/ld+json">' . json_encode(array(
     '@context' => 'https://schema.org',
     '@type' => 'WebSite',
-    'name' => 'Commerza',
+    'name' => 'Mini E-Commerce',
     'url' => $baseUrl,
     'potentialAction' => array(
         '@type' => 'SearchAction',

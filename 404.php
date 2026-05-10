@@ -1,7 +1,7 @@
 <?php
 require_once 'config/db.php';
 
-$pageTitle = '404 Not Found | Commerza';
+$pageTitle = '404 Not Found | Mini E-Commerce';
 $metaDescription = 'The page you requested was not found.';
 $metaKeywords = '404, not found';
 

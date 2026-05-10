@@ -44,8 +44,8 @@ if (isset($_POST['place_order'])) {
     }
 }
 
-$pageTitle = 'Checkout | Commerza';
-$metaDescription = 'Place your order quickly from Commerza checkout.';
+$pageTitle = 'Checkout | Mini E-Commerce';
+$metaDescription = 'Place your order quickly from Mini E-Commerce checkout.';
 $metaKeywords = 'checkout, order, buy';
 
 require_once 'includes/header.php';

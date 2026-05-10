@@ -1,9 +1,9 @@
 <?php
 if (!isset($pageTitle)) {
-    $pageTitle = 'Commerza - Mini Ecommerce';
+    $pageTitle = ' Mini Ecommerce';
 }
 if (!isset($metaDescription)) {
-    $metaDescription = 'Commerza mini ecommerce website with premium responsive storefront.';
+    $metaDescription = 'Mini E-Commerce Store with premium responsive storefront.';
 }
 if (!isset($metaKeywords)) {
     $metaKeywords = 'ecommerce, shopping, cart, admin panel';
@@ -57,7 +57,7 @@ $appPathSafe = isset($APP_PATH) ? $APP_PATH : '';
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark top-nav sticky-top">
         <div class="container">
-            <a class="navbar-brand brand-mark" href="<?php echo $appPathSafe; ?>/">Commerza</a>
+            <a class="navbar-brand brand-mark" href="<?php echo $appPathSafe; ?>/">Mini E-Commerce</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

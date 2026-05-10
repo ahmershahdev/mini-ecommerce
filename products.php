@@ -26,12 +26,12 @@ if ($product) {
     }
 }
 
-$pageTitle = 'Product Details | Commerza';
-$metaDescription = 'View product details and buy from Commerza.';
+$pageTitle = 'Product Details | Mini E-Commerce';
+$metaDescription = 'View product details and buy from Mini E-Commerce Store.';
 $metaKeywords = 'product, details, ecommerce';
 
 if ($product) {
-    $pageTitle = $product['name'] . ' | Commerza';
+    $pageTitle = $product['name'] . ' | Mini E-Commerce';
     $metaDescription = $product['description'];
 }
 

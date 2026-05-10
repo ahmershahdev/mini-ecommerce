@@ -36,8 +36,8 @@ if (isset($_GET['remove'])) {
 
 $cartPath = (isset($APP_PATH) ? $APP_PATH : '') . '/cart';
 
-$pageTitle = 'Your Cart | Commerza';
-$metaDescription = 'Manage your cart and checkout quickly at Commerza.';
+$pageTitle = 'Your Cart | Mini E-Commerce';
+$metaDescription = 'Manage your cart and checkout quickly at our Mini E-Commerce Store.';
 $metaKeywords = 'cart, checkout, ecommerce';
 
 require_once 'includes/header.php';

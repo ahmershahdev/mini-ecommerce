@@ -2,7 +2,7 @@
     <div class="container py-4">
         <div class="row g-3 align-items-center">
             <div class="col-md-6">
-                <h5 class="footer-title mb-1">Commerza</h5>
+                <h5 class="footer-title mb-1">Mini E-Commerce Store</h5>
                 <p class="mb-1 small">Premium mini ecommerce demo with Bootstrap, jQuery, AJAX, PHP, SQL and SEO.</p>
                 <p class="mb-0 small footer-muted">Fast checkout, secure login, premium UI experience.</p>
             </div>

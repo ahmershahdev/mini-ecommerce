@@ -1,5 +1,5 @@
 <?php
-require_once '../../config/db.php';
+require_once 'config/db.php';
 
 if (!isset($_SESSION['admin_id'])) {
     header('Location: ' . $APP_PATH . '/admin-login');
@@ -31,7 +31,7 @@ $msg = isset($_GET['msg']) ? $_GET['msg'] : '';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Admin Panel | Commerza</title>
+    <title>Admin Panel | Mini E-Commerce</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo $APP_PATH; ?>/assets/css/style.css" rel="stylesheet">
 </head>

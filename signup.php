@@ -44,7 +44,7 @@ if (isset($_POST['signup'])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Signup | Commerza</title>
+    <title>Signup | Mini E-Commerce</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link href="<?php echo $APP_PATH; ?>/assets/css/style.css" rel="stylesheet">
@@ -54,7 +54,7 @@ if (isset($_POST['signup'])) {
     <div class="auth-shell">
         <div class="auth-card">
             <div class="auth-brand">
-                <a class="brand-mark" href="<?php echo $APP_PATH; ?>/">Commerza</a>
+                <a class="brand-mark" href="<?php echo $APP_PATH; ?>/">Mini E-Commerce</a>
                 <p class="auth-subtitle">Create your account and start shopping instantly.</p>
             </div>
 

@@ -1,5 +1,5 @@
 <?php
-require_once '../../config/db.php';
+require_once 'config/db.php';
 
 if (!isset($_SESSION['admin_id'])) {
     header('Location: ' . $APP_PATH . '/admin-login');
