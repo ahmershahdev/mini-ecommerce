@@ -1,5 +1,5 @@
 <?php
-require_once 'config/db.php';
+require_once 'db.php';
 
 $pageTitle = '404 Not Found | Mini E-Commerce';
 $metaDescription = 'The page you requested was not found.';

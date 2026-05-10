@@ -3,8 +3,8 @@
         <div class="row g-3 align-items-center">
             <div class="col-md-6">
                 <h5 class="footer-title mb-1">Mini E-Commerce Store</h5>
-                <p class="mb-1 small">Premium mini ecommerce demo with Bootstrap, jQuery, AJAX, PHP, SQL and SEO.</p>
-                <p class="mb-0 small footer-muted">Fast checkout, secure login, premium UI experience.</p>
+                <p class="mb-1 small">Created by Ahmer with a &#9749</p>
+                <p class="mb-0 small footer-muted">Fast checkout than your balance, secure login than you think, premium UI experience than Amazon</p>
             </div>
             <div class="col-md-6 text-md-end">
                 <a href="<?php echo isset($APP_PATH) ? $APP_PATH : ''; ?>/admin-login" class="btn btn-sm btn-outline-light">Admin</a>
@@ -17,7 +17,7 @@
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="<?php echo isset($APP_PATH) ? $APP_PATH : ''; ?>/assets/js/main.js"></script>
+<script src="<?php echo isset($APP_PATH) ? $APP_PATH : ''; ?>assets/js/main.js"></script>
 </body>
 
 </html>

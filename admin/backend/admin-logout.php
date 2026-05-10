@@ -1,5 +1,5 @@
 <?php
-require_once '../../config/db.php';
+include 'db.php';
 
 unset($_SESSION['admin_id']);
 unset($_SESSION['admin_username']);

@@ -1,5 +1,5 @@
 <?php
-require_once 'config/db.php';
+require_once 'db.php';
 
 $slug = '';
 if (isset($_GET['slug'])) {
@@ -50,7 +50,7 @@ require_once 'includes/header.php';
                 <div class="form-box product-info-card">
                     <h2 class="mb-3"><?php echo htmlspecialchars($product['name']); ?></h2>
                     <p class="text-muted"><?php echo htmlspecialchars($product['description']); ?></p>
-                    <div class="h4 product-price mb-3">$<?php echo number_format((float) $product['price'], 2); ?></div>
+                    <div class="h4 product-price mb-3">PKR<?php echo number_format((float) $product['price'], 2); ?></div>
                     <div class="d-flex flex-wrap gap-2">
                         <button class="btn btn-brand add-to-cart-btn" data-id="<?php echo (int) $product['id']; ?>">Add to Cart</button>
                         <button class="btn btn-buy buy-now-btn" data-id="<?php echo (int) $product['id']; ?>">Buy Now</button>
@@ -74,7 +74,7 @@ require_once 'includes/header.php';
                                 <div class="card-body d-flex flex-column">
                                     <h6 class="product-title mb-2"><?php echo htmlspecialchars($r['name']); ?></h6>
                                     <div class="mt-auto d-flex justify-content-between align-items-center">
-                                        <span class="product-price">$<?php echo number_format((float) $r['price'], 2); ?></span>
+                                        <span class="product-price">PKR<?php echo number_format((float) $r['price'], 2); ?></span>
                                         <a href="<?php echo $APP_PATH; ?>/product/<?php echo urlencode($r['slug']); ?>" class="btn btn-sm btn-outline-dark">View</a>
                                     </div>
                                 </div>

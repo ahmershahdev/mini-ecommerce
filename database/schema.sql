@@ -67,8 +67,8 @@ INSERT INTO admins (username, password) VALUES
 ('admin', MD5('admin123'));
 
 INSERT INTO products (name, slug, description, price, image_url, is_active) VALUES
-('Product A', 'product-a', 'Premium Product A with elegant finish and modern style.', 49.00, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80', 1),
-('Product B', 'product-b', 'Product B delivers daily performance with strong reliability.', 59.00, 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80', 1),
-('Product C', 'product-c', 'Product C crafted for users who want sleek and practical design.', 69.00, 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80', 1),
-('Product D', 'product-d', 'Product D built from quality materials with premium visual appeal.', 79.00, 'https://images.unsplash.com/photo-1511556820780-d912e42b4980?auto=format&fit=crop&w=800&q=80', 1),
-('Product E', 'product-e', 'Product E is a complete package for style, comfort, and value.', 89.00, 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=80', 1);
+('Product A', 'product-a', 'Premium Product A with elegant finish and modern style.', 4950.99, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80', 1),
+('Product B', 'product-b', 'Product B delivers daily performance with strong reliability.', 5950.20, 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80', 1),
+('Product C', 'product-c', 'Product C crafted for users who want sleek and practical design.', 6950.00, 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80', 1),
+('Product D', 'product-d', 'Product D built from quality materials with premium visual appeal.', 7950.00, 'https://images.unsplash.com/photo-1511556820780-d912e42b4980?auto=format&fit=crop&w=800&q=80', 1),
+('Product E', 'product-e', 'Product E is a complete package for style, comfort, and value.', 8950.50, 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=80', 1);

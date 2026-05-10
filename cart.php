@@ -1,5 +1,5 @@
 <?php
-require_once 'config/db.php';
+require_once 'db.php';
 
 if (!isset($_SESSION['cart']) || !is_array($_SESSION['cart'])) {
     $_SESSION['cart'] = array();

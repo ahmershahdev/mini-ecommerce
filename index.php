@@ -1,5 +1,5 @@
 <?php
-require_once 'config/db.php';
+require_once 'db.php';
 
 $pageTitle = 'Mini E-Commerce | Premium Shopping';
 $metaDescription = 'Buy Product A to Product E from mini ecommerce storefront.';
@@ -70,7 +70,7 @@ require_once 'includes/header.php';
                                 <h5 class="product-title"><?php echo htmlspecialchars($product['name']); ?></h5>
                                 <p class="small text-muted mb-2"><?php echo htmlspecialchars($product['description']); ?></p>
                                 <div class="mt-auto d-flex justify-content-between align-items-center gap-2">
-                                    <span class="product-price">$<?php echo number_format((float) $product['price'], 2); ?></span>
+                                    <span class="product-price">PKR<?php echo number_format((float) $product['price'], 2); ?></span>
                                     <div class="d-flex gap-2">
                                         <a href="<?php echo $APP_PATH; ?>/product/<?php echo urlencode($product['slug']); ?>" class="btn btn-sm btn-outline-dark">View</a>
                                         <button class="btn btn-sm btn-brand add-to-cart-btn" data-id="<?php echo (int) $product['id']; ?>">Add to Cart</button>
@@ -93,7 +93,7 @@ require_once 'includes/header.php';
                                     <h5 class="product-title"><?php echo htmlspecialchars($product['name']); ?></h5>
                                     <p class="small text-muted mb-2"><?php echo htmlspecialchars($product['description']); ?></p>
                                     <div class="mt-auto d-flex justify-content-between align-items-center gap-2">
-                                        <span class="product-price">$<?php echo number_format((float) $product['price'], 2); ?></span>
+                                        <span class="product-price">PKR<?php echo number_format((float) $product['price'], 2); ?></span>
                                         <div class="d-flex gap-2">
                                             <a href="<?php echo $APP_PATH; ?>/product/<?php echo urlencode($product['slug']); ?>" class="btn btn-sm btn-outline-dark">View</a>
                                             <button class="btn btn-sm btn-brand add-to-cart-btn" data-id="<?php echo (int) $product['id']; ?>">Add to Cart</button>
