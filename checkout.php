@@ -48,7 +48,7 @@ $pageTitle = 'Checkout | Mini E-Commerce';
 $metaDescription = 'Place your order quickly from Mini E-Commerce checkout.';
 $metaKeywords = 'checkout, order, buy';
 
-require_once 'includes/header.php';
+require_once 'header.php';
 ?>
 
 <main class="container py-4">
@@ -67,4 +67,4 @@ require_once 'includes/header.php';
     </div>
 </main>
 
-<?php require_once 'includes/footer.php'; ?>
+<?php require_once 'footer.php'; ?>

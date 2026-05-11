@@ -1,0 +1,32 @@
+Mini E-Commerce
+
+Stack:
+- PHP, MySQL, Apache
+- Bootstrap 5, jQuery
+
+Entry Points:
+- index.php (home)
+- products.php (product details via slug)
+- cart.php, checkout.php
+- login.php, signup.php
+
+APIs:
+- search_suggestions.php (GET q)
+- cart_api.php (POST product_id, qty)
+
+Base Path:
+- APP_PATH is calculated in db.php based on DOCUMENT_ROOT
+
+Assets:
+- /assets/css/style.css
+- /assets/js/main.js
+- /assets/js/auth.js
+
+Admin:
+- /admin-login -> admin/frontend/admin-login.php
+- /admin-panel -> admin/frontend/admin-panel.php
+- /admin/backend/product_crud.php
+
+Database:
+- Schema: database/schema.sql
+- Tables: users, admins, products, orders, order_items

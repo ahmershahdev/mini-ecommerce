@@ -4,7 +4,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 $docRoot = isset($_SERVER['DOCUMENT_ROOT']) ? realpath($_SERVER['DOCUMENT_ROOT']) : '';
-$projectRoot = realpath(__DIR__ . '/..');
+$projectRoot = realpath(__DIR__);
 $APP_PATH = '';
 
 if ($docRoot && $projectRoot && strpos($projectRoot, $docRoot) === 0) {

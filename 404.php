@@ -6,7 +6,7 @@ $metaDescription = 'The page you requested was not found.';
 $metaKeywords = '404, not found';
 
 http_response_code(404);
-require_once 'includes/header.php';
+require_once 'header.php';
 ?>
 <main class="container py-5">
     <div class="form-box text-center">
@@ -15,4 +15,4 @@ require_once 'includes/header.php';
         <a class="btn btn-brand" href="<?php echo $APP_PATH; ?>/">Back to Homepage</a>
     </div>
 </main>
-<?php require_once 'includes/footer.php'; ?>
+<?php require_once 'footer.php'; ?>

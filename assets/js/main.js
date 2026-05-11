@@ -40,7 +40,7 @@
       }
 
       $.ajax({
-        url: appBase + "/backend/search_suggestions.php",
+        url: appBase + "/search_suggestions.php",
         method: "GET",
         data: { q: q },
         dataType: "json",
@@ -135,7 +135,7 @@
       var imgEl = productCard.find("img").get(0);
 
       $.ajax({
-        url: appBase + "/backend/cart_api.php",
+        url: appBase + "/cart_api.php",
         method: "POST",
         data: { product_id: productId, qty: 1 },
         dataType: "json",
@@ -160,7 +160,7 @@
       var id = $(this).attr("data-id");
 
       $.ajax({
-        url: appBase + "/backend/cart_api.php",
+        url: appBase + "/cart_api.php",
         method: "POST",
         data: { product_id: id, qty: 1 },
         dataType: "json",

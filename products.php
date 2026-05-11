@@ -35,7 +35,7 @@ if ($product) {
     $metaDescription = $product['description'];
 }
 
-require_once 'includes/header.php';
+require_once 'header.php';
 ?>
 
 <main class="container py-4">
@@ -90,4 +90,4 @@ require_once 'includes/header.php';
     <?php } ?>
 </main>
 
-<?php require_once 'includes/footer.php'; ?>
+<?php require_once 'footer.php'; ?>

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /admin-login
+Disallow: /admin-panel
+Disallow: /admin/backend/
+Sitemap: /sitemap.xml

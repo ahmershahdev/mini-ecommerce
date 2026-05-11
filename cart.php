@@ -40,7 +40,7 @@ $pageTitle = 'Your Cart | Mini E-Commerce';
 $metaDescription = 'Manage your cart and checkout quickly at our Mini E-Commerce Store.';
 $metaKeywords = 'cart, checkout, ecommerce';
 
-require_once 'includes/header.php';
+require_once 'header.php';
 
 $total = 0;
 ?>
@@ -103,4 +103,4 @@ $total = 0;
     <?php } ?>
 </main>
 
-<?php require_once 'includes/footer.php'; ?>
+<?php require_once 'footer.php'; ?>

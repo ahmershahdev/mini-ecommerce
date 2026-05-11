@@ -3,6 +3,29 @@ require_once 'db.php';
 
 $msg = '';
 
+$scheme = 'http';
+if ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https')) {
+    $scheme = 'https';
+}
+$host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost';
+$uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '/signup';
+$canonicalUrl = $scheme . '://' . $host . strtok($uri, '?');
+$siteName = 'Mini E-Commerce';
+$metaDescription = 'Create a Mini E-Commerce account to start shopping.';
+$siteJsonLd = json_encode(array(
+    '@context' => 'https://schema.org',
+    '@type' => 'WebSite',
+    'name' => $siteName,
+    'url' => isset($APP_URL) ? $APP_URL : ($scheme . '://' . $host)
+), JSON_UNESCAPED_SLASHES);
+$pageJsonLd = json_encode(array(
+    '@context' => 'https://schema.org',
+    '@type' => 'WebPage',
+    'name' => 'Signup | Mini E-Commerce',
+    'description' => $metaDescription,
+    'url' => $canonicalUrl
+), JSON_UNESCAPED_SLASHES);
+
 if (isset($_POST['signup'])) {
     $name = isset($_POST['name']) ? trim($_POST['name']) : '';
     $email = isset($_POST['email']) ? trim($_POST['email']) : '';
@@ -45,9 +68,22 @@ if (isset($_POST['signup'])) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Signup | Mini E-Commerce</title>
+    <meta name="description" content="<?php echo htmlspecialchars($metaDescription); ?>">
+    <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="<?php echo htmlspecialchars($siteName); ?>">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Signup | Mini E-Commerce">
+    <meta property="og:description" content="<?php echo htmlspecialchars($metaDescription); ?>">
+    <meta property="og:url" content="<?php echo htmlspecialchars($canonicalUrl); ?>">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Signup | Mini E-Commerce">
+    <meta name="twitter:description" content="<?php echo htmlspecialchars($metaDescription); ?>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link href="<?php echo $APP_PATH; ?>/assets/css/style.css" rel="stylesheet">
+    <script type="application/ld+json"><?php echo $siteJsonLd; ?></script>
+    <script type="application/ld+json"><?php echo $pageJsonLd; ?></script>
 </head>
 
 <body class="auth-body">

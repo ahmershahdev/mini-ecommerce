@@ -1,5 +1,5 @@
 <?php
-require_once 'db.php';
+include 'db.php';
 
 $pageTitle = 'Mini E-Commerce | Premium Shopping';
 $metaDescription = 'Buy Product A to Product E from mini ecommerce storefront.';
@@ -33,23 +33,11 @@ foreach ($products as $p) {
 
 $extraHead = '<script type="application/ld+json">' . json_encode(array(
     '@context' => 'https://schema.org',
-    '@type' => 'WebSite',
-    'name' => 'Mini E-Commerce',
-    'url' => $baseUrl,
-    'potentialAction' => array(
-        '@type' => 'SearchAction',
-        'target' => $baseUrl . '/?q={search_term_string}',
-        'query-input' => 'required name=search_term_string'
-    )
-), JSON_UNESCAPED_SLASHES) . '</script>';
-
-$extraHead .= '<script type="application/ld+json">' . json_encode(array(
-    '@context' => 'https://schema.org',
     '@type' => 'ItemList',
     'itemListElement' => $itemList
 ), JSON_UNESCAPED_SLASHES) . '</script>';
 
-require_once 'includes/header.php';
+include 'header.php';
 ?>
 
 <main class="container pb-5">
@@ -114,4 +102,4 @@ require_once 'includes/header.php';
     </section>
 </main>
 
-<?php require_once 'includes/footer.php'; ?>
+<?php include 'footer.php'; ?>
