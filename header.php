@@ -21,16 +21,13 @@ if (isset($_SESSION['cart']) && is_array($_SESSION['cart'])) {
     }
 }
 
-$scheme = 'http';
-if ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https')) {
-    $scheme = 'https';
-}
-$host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost';
+$scheme = 'https';
+$host = 'miniecommerce.ahmershah.dev';
 $uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '/';
 $canonicalUrl = $scheme . '://' . $host . strtok($uri, '?');
 $appPathSafe = isset($APP_PATH) ? $APP_PATH : '';
 $siteName = 'Mini E-Commerce';
-$baseUrl = isset($APP_URL) ? $APP_URL : ($scheme . '://' . $host);
+$baseUrl = $scheme . '://' . $host . $appPathSafe;
 $siteJsonLd = json_encode(array(
     '@context' => 'https://schema.org',
     '@type' => 'WebSite',

@@ -3,11 +3,8 @@ include 'db.php';
 
 $msg = '';
 
-$scheme = 'http';
-if ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https')) {
-    $scheme = 'https';
-}
-$host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost';
+$scheme = 'https';
+$host = 'miniecommerce.ahmershah.dev';
 $uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '/login';
 $canonicalUrl = $scheme . '://' . $host . strtok($uri, '?');
 $siteName = 'Mini E-Commerce';
@@ -16,7 +13,7 @@ $siteJsonLd = json_encode(array(
     '@context' => 'https://schema.org',
     '@type' => 'WebSite',
     'name' => $siteName,
-    'url' => isset($APP_URL) ? $APP_URL : ($scheme . '://' . $host)
+    'url' => $scheme . '://' . $host
 ), JSON_UNESCAPED_SLASHES);
 $pageJsonLd = json_encode(array(
     '@context' => 'https://schema.org',

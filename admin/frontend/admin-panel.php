@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+require_once __DIR__ . '/../../db.php';
 
 if (!isset($_SESSION['admin_id'])) {
     header('Location: ' . $APP_PATH . '/admin-login');

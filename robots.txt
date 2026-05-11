@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /admin-login
 Disallow: /admin-panel
 Disallow: /admin/backend/
-Sitemap: /sitemap.xml
+Sitemap: https://miniecommerce.ahmershah.dev/sitemap.xml
